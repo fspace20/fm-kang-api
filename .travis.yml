@@ -1,1 +1,9 @@
-language: node_js
+before_script:
+  - cp /sched-crawler/app/bot.config.json
+deploy:
+  provider: lambda
+  function_name: "crawler"
+  region: "ap-northeast-1"
+  role: "arn:aws:iam::514115015388:role/lambda_basic_execution"
+  runtime: "nodejs6.10"
+  handler_name: "handler.crawler"

@@ -8,3 +8,5 @@ deploy:
   role: "arn:aws:iam::514115015388:role/lambda_basic_execution"
   runtime: "nodejs6.10"
   handler_name: "handler.crawler"
+  access_key_id: "AWS ID"
+  secret_access_key: "AWS SECRET KEY"

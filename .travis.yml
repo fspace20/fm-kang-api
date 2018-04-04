@@ -1,5 +1,3 @@
-before_script:
-  - cp /sched-crawler/app/bot.config.json
 deploy:
   provider: lambda
   function_name: "crawler"

@@ -8,8 +8,6 @@ before_install:
   - cd sched-crawler
   - npm install -g serverless
   - cd app
-script:  
-  - sls deploy
 deploy:
   provider: lambda
   function_name: "crawler"
